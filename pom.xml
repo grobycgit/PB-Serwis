@@ -4,7 +4,7 @@
 	<groupId>PBServiceApplication</groupId>
 	<artifactId>PBServiceApplication</artifactId>
 	<version>1.0.0</version>
-	<!-- checking -->
+	
 	<dependencies>
 		<dependency>
 			<groupId>com.jgoodies</groupId>
