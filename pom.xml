@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>PBServiceApplication</groupId>
 	<artifactId>PBServiceApplication</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<dependencies>
 		<dependency>
