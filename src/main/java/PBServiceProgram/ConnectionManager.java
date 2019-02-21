@@ -21,7 +21,9 @@ public class ConnectionManager {
 		address = props.getProperty("address");
 		port = props.getProperty("port");
 		database = props.getProperty("database");
-		sqlConnection = DriverManager.getConnection("jdbc:mysql://" + address + ":" + port + "/" + database, user, password);
+		String url = "jdbc:mysql://" + address + ":" + port + "/";
+		sqlConnection = DriverManager.getConnection(url + database +"?useUnicode=true&characterEncoding=UTF-8", user, password);
+		
 	}
 
 	public Connection getSqlConnection() {

@@ -294,9 +294,16 @@ public class NewNotif extends JFrame {
 		btnSavePrint.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				saveNotifications(choosenUser);
-
+				
+				NotificationsList lastNotif = tempNotificationsList;
+				
+				try {
+					lastNotif = usersDAO.getLastNotif();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 				try{
-				PrintNotification print = new PrintNotification(main, tempNotificationsList);
+				PrintNotification print = new PrintNotification(main, lastNotif);
 				print.print();
 				} catch (Exception w){
 					
